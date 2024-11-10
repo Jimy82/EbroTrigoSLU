@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ebro Trigo S.L.U.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        #map {
+            height: 450px;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function initMap() {
+            var ebroTrigoLocation = [41.9263605, -1.2548991];
+            var map = L.map('map').setView(ebroTrigoLocation, 15);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker(ebroTrigoLocation).addTo(map)
+                .bindPopup('Ebro Trigo SLU<br>Avenida Constitución, s/n<br>Tauste, 50660<br>Zaragoza')
+                .openPopup();
+        }
+    </script>
+</head>
+<body onload="initMap()">
+    <header>
+        <img src="imagenes/logo.png" alt="Ebro Trigo SLU" class="logo">
+        <h1>Ebro Trigo SLU</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="nuestra-empresa.html">Nuestra Empresa</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="jaime.frutos.perez.surio@gmail.com" method="post" enctype="text/plain">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <p>Dirección: Avenida Constitución, s/n, Tauste, 50660, Zaragoza</p>
+            <div id="map"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ebro Trigo S.L.U. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

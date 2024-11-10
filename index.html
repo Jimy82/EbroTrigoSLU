@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Ebro Trigo S.L.U</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            font-family: 'Arial', sans-serif;
+            cursor: pointer;
+        }
+        .container {
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out 2s forwards;
+        }
+        .logo-container {
+            width: 300px;
+            height: 300px;
+            background: url('Logo_Ebrotrigo.png') no-repeat center center;
+            background-size: contain;
+            margin: 0 auto;
+            animation: zoomIn 2s ease-in-out;
+            border-radius: 5px;
+             /* Borde verde para unificar con los colores */
+        }
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out 2s forwards;
+            opacity: 0;
+        }
+        p {
+            color: #666;
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-in-out 3s forwards;
+            opacity: 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #00A651; /* Color verde para unificar */
+            border: none;
+            border-radius: 5px;
+            animation: fadeIn 2s ease-in-out 4s forwards;
+            opacity: 0;
+            text-decoration: none;
+        }
+        .cta-button:hover {
+            background-color: #0071BC;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container"></div>
+        <h1>Bienvenido a Ebro Trigo S.L.U</h1>
+        <p></p>
+        <a class="cta-button" href="home.html">Descubre más</a>
+    </div>
+</body>
+</html>
+
+

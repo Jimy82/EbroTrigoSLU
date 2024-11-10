@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Ebro Trigo SLU</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .gallery a {
+            width: 200px;
+            height: auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .category {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="Ebro Trigo SLU" class="logo">
+        <h1 class="empresa-nombre">Ebro Trigo SLU</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="nuestra-empresa.html">Nuestra Empresa</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="category">
+                <h3>Instalaciones</h3>
+                <div class="gallery">
+                    <a href="imagenes/DSC00984.JPG" data-lightbox="instalaciones" data-title="Imagen 1"><img src="imagenes/DSC00984.JPG" alt="Imagen 1"></a>
+                    <a href="imagenes/DSC00987.JPG" data-lightbox="instalaciones" data-title="Imagen 2"><img src="imagenes/DSC00987.JPG" alt="Imagen 2"></a>
+                    <a href="imagenes/DSC00991.JPG" data-lightbox="instalaciones" data-title="Imagen 3"><img src="imagenes/DSC00991.JPG" alt="Imagen 3"></a>
+                    <a href="imagenes/DSC00993.JPG" data-lightbox="instalaciones" data-title="Imagen 4"><img src="imagenes/DSC00993.JPG" alt="Imagen 4"></a>
+                    <a href="imagenes/DSC00997.JPG" data-lightbox="instalaciones" data-title="Imagen 5"><img src="imagenes/DSC00997.JPG" alt="Imagen 5"></a>
+                    <a href="imagenes/DSC00999.JPG" data-lightbox="instalaciones" data-title="Imagen 6"><img src="imagenes/DSC00999.JPG" alt="Imagen 6"></a>
+                    <a href="imagenes/DSC01003.JPG" data-lightbox="instalaciones" data-title="Imagen 7"><img src="imagenes/DSC01003.JPG" alt="Imagen 7"></a>
+                    <a href="imagenes/DSC01032.JPG" data-lightbox="instalaciones" data-title="Imagen 8"><img src="imagenes/DSC01032.JPG" alt="Imagen 8"></a>
+                    <a href="imagenes/DSC01033.JPG" data-lightbox="instalaciones" data-title="Imagen 9"><img src="imagenes/DSC01033.JPG" alt="Imagen 9"></a>
+                    <a href="imagenes/DSC01034.JPG" data-lightbox="instalaciones" data-title="Imagen 10"><img src="imagenes/DSC01034.JPG" alt="Imagen 10"></a>
+                    <a href="imagenes/DSC01039.JPG" data-lightbox="instalaciones" data-title="Imagen 11"><img src="imagenes/DSC01039.JPG" alt="Imagen 11"></a>
+                    <a href="imagenes/DSC01041.JPG" data-lightbox="instalaciones" data-title="Imagen 12"><img src="imagenes/DSC01041.JPG" alt="Imagen 12"></a>
+                    <a href="imagenes/DSC01044.JPG" data-lightbox="instalaciones" data-title="Imagen 13"><img src="imagenes/DSC01044.JPG" alt="Imagen 13"></a>
+                    <a href="imagenes/DSC01045.JPG" data-lightbox="instalaciones" data-title="Imagen 14"><img src="imagenes/DSC01045.JPG" alt="Imagen 14"></a>
+                    <a href="imagenes/DSC01048.JPG" data-lightbox="instalaciones" data-title="Imagen 15"><img src="imagenes/DSC01048.JPG" alt="Imagen 15"></a>
+                    <a href="imagenes/DSC01049.JPG" data-lightbox="instalaciones" data-title="Imagen 16"><img src="imagenes/DSC01049.JPG" alt="Imagen 16"></a>
+                    <a href="imagenes/DSC01050.JPG" data-lightbox="instalaciones" data-title="Imagen 17"><img src="imagenes/DSC01050.JPG" alt="Imagen 17"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ebro Trigo S.L.U. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
